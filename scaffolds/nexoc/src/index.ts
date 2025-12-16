@@ -1,72 +1,7 @@
-// Core
-export { createNexoc, defineNexocConfig, definePlugin, consola } from './core/nexoc'
-
-// Types
-export type {
-  // Lifecycle
-  LifecyclePhase,
-  LifecycleContext,
-  // Pipeline
-  PipelineStage,
-  PipelineContext,
-  PipelineOptions,
-  // Hooks
-  NexocHooks,
-  NexocHookable,
-  // Commands
-  Command,
-  CommandMeta,
-  CommandOptions,
-  CommandArgs,
-  CommandOptionDef,
-  CommandArgDef,
-  CommandContext,
-  // Adapters
-  BuildAdapter,
-  BuildOptions,
-  BuildResult,
-  AdapterRegistry,
-  // Instance
-  NexocConfig,
-  NexocPlugin,
-  NexocInstance,
-} from './types'
-
-// Lifecycle
-export { 
-  LifecycleManager, 
-  createLifecycle, 
-  createLifecycleContext,
-  LIFECYCLE_PHASES 
-} from './lifecycle'
-
-// Pipeline
-export { 
-  Pipeline, 
-  createPipeline, 
-  createPipelineContext,
-  defineStage,
-  composePipelines 
-} from './pipeline'
-
-// Hooks
-export { 
-  createNexocHooks, 
-  hookUtils,
-  createHookDecorator,
-  createHooks 
-} from './hooks'
-
-// Commands
-export { 
-  CommandRegistry, 
-  CommandExecutor,
-  defineCommand,
-  toCittyCommand,
-  runMain 
-} from './commands'
-
-// Adapters
+export { createNexoc, defineNexocConfig, definePlugin } from '@nexoc/core'
+export { createNexocHooks, hookUtils, createHookDecorator, createHooks } from '@nexoc/hooks'
+export { LifecycleManager, createLifecycle, createLifecycleContext, LIFECYCLE_PHASES } from '@nexoc/lifecycle'
+export { Pipeline, createPipeline, createPipelineContext, defineStage, composePipelines } from '@nexoc/pipeline'
 export {
   createAdapterRegistry,
   BuildManager,
@@ -77,5 +12,35 @@ export {
   serverlessAdapter,
   getBuiltinAdapters,
   registerBuiltinAdapters,
-} from './adapters'
+} from '@nexoc/adapters'
+export {
+  CommandRegistry,
+  CommandExecutor,
+  defineCommand,
+  toCittyCommand,
+  runMain,
+} from '@nexoc/commands'
 
+export type {
+  LifecyclePhase,
+  LifecycleContext,
+  PipelineStage,
+  PipelineContext,
+  PipelineOptions,
+  NexocHooks,
+  NexocHookable,
+  Command,
+  CommandMeta,
+  CommandOptions,
+  CommandArgs,
+  CommandOptionDef,
+  CommandArgDef,
+  CommandContext,
+  BuildAdapter,
+  BuildOptions,
+  BuildResult,
+  AdapterRegistry,
+  NexocConfig,
+  NexocPlugin,
+  NexocInstance,
+} from '@nexoc/types'

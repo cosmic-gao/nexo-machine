@@ -1,7 +1,6 @@
-#!/usr/bin/env node
 import { defineCommand, runMain } from 'citty'
-import { createNexoc } from './core/nexoc'
-import { defineCommand as defineNexocCommand, toCittyCommand } from './commands'
+import { createNexoc } from '@nexoc/core'
+import { defineCommand as defineNexocCommand, toCittyCommand } from '@nexoc/commands'
 
 const nexoc = createNexoc({
   logLevel: 'info',
@@ -98,7 +97,7 @@ const buildCommand = defineNexocCommand({
     const { options, nexoc } = ctx
     const adapter = nexoc.adapters.get(options.adapter as string)
     if (!adapter) return
-    
+
     await adapter.build({
       rootDir: process.cwd(),
       outDir: options.outDir as string,

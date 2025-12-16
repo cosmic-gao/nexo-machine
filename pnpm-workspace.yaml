@@ -1,4 +1,6 @@
 packages:
+  - apps/*
+  - commands/*
   - packages/*
   - scaffolds/*
   - templates/*

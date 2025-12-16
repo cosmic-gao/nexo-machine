@@ -1,0 +1,23 @@
+{
+  "name": "@nexoc/lifecycle",
+  "version": "0.1.0",
+  "description": "Lifecycle management for Nexoc",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@nexoc/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}
+
