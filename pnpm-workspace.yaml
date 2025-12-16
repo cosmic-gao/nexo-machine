@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - scaffolds/*
+  - templates/*
+
+ignoredBuiltDependencies:
+  - esbuild

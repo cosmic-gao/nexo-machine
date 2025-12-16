@@ -1,0 +1,19 @@
+{
+  "name": "nexo-machine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nexo Machine monorepo",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
+
