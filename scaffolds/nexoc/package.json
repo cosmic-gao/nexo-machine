@@ -6,7 +6,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "bin": {
-    "nexoc": "./dist/cli.js"
+    "nexoc": "./bin/nexoc.js"
   },
   "exports": {
     ".": {
@@ -19,7 +19,7 @@
     }
   },
   "scripts": {
-    "build": "tsup"
+    "build": "echo 'No build needed - using tsx'"
   },
   "dependencies": {
     "@nexoc/types": "workspace:*",
@@ -29,11 +29,11 @@
     "@nexoc/pipeline": "workspace:*",
     "@nexoc/adapters": "workspace:*",
     "@nexoc/commands": "workspace:*",
-    "citty": "^0.1.6"
+    "citty": "^0.1.6",
+    "tsx": "^4.7.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
-    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "engines": {

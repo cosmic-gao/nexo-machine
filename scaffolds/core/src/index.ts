@@ -67,3 +67,15 @@ export function definePlugin(plugin: NexocPlugin): NexocPlugin {
 
 export type { NexocConfig, NexocInstance, NexocPlugin } from '@nexoc/types'
 
+export {
+  discoverCommands,
+  discoverAndRegisterCommands,
+  listRemoteCommands,
+  installCommand,
+  isCommandPackage,
+  COMMAND_PACKAGE_PREFIX,
+  COMMAND_KEYWORD,
+  NPM_REGISTRY,
+  GITHUB_API,
+} from './discovery.js'
+export type { DiscoveredCommand, RemoteCommandInfo, DiscoveryOptions } from './discovery.js'
