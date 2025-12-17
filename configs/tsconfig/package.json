@@ -1,0 +1,23 @@
+{
+    "name": "@nexoc/tsconfig",
+    "version": "0.1.0",
+    "description": "Shared TypeScript configurations for Nexoc projects",
+    "type": "module",
+    "exports": {
+        "./base": "./base.json",
+        "./node": "./node.json",
+        "./web": "./web.json",
+        "./vite": "./vite.json",
+        "./react": "./react.json",
+        "./vue": "./vue.json"
+    },
+    "files": [
+        "*.json"
+    ],
+    "keywords": [
+        "tsconfig",
+        "typescript",
+        "nexoc"
+    ],
+    "license": "MIT"
+}

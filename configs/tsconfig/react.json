@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Environment",
+  "extends": "./vite.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+
+    "types": ["vite/client"]
+  }
+}
+

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Vite Environment",
+  "extends": "./web.json",
+  "compilerOptions": {
+    "types": ["vite/client"],
+
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
+    "useDefineForClassFields": true
+  }
+}
+

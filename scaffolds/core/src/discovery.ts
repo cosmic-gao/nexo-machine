@@ -141,8 +141,8 @@ async function getLocalInstalledPackages(): Promise<string[]> {
   const packages: string[] = []
 
   try {
-    const fs = await import('fs')
-    const path = await import('path')
+    const fs = await import('node:fs')
+    const path = await import('node:path')
 
     const checkNodeModules = async (baseDir: string) => {
       const nexocDir = path.join(baseDir, 'node_modules', '@nexoc')
@@ -275,7 +275,7 @@ export async function installCommand(
   packageName: string,
   options: { source?: 'npm' | 'github'; githubRepo?: string } = {}
 ): Promise<boolean> {
-  const { spawn } = await import('child_process')
+  const { spawn } = await import('node:child_process')
   
   let installCmd: string
   

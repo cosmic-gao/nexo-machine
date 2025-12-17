@@ -77,5 +77,5 @@ export {
   COMMAND_KEYWORD,
   NPM_REGISTRY,
   GITHUB_API,
-} from './discovery.js'
+} from './discovery'
 export type { DiscoveredCommand, RemoteCommandInfo, DiscoveryOptions } from './discovery.js'

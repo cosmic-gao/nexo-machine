@@ -180,7 +180,7 @@ export class Pipeline<TInput = unknown, TOutput = unknown> {
     for (let i = 0; i < this.stages.length; i++) {
       if (ctx.aborted) break
       ctx.currentStageIndex = i
-      const stage = this.stages[i]
+      const stage = this.stages[i]!
       currentInput = await this.executeStage(stage, currentInput, ctx)
     }
 

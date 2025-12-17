@@ -16,6 +16,7 @@
     "citty": "^0.1.6"
   },
   "devDependencies": {
+    "@nexoc/tsconfig": "workspace:*",
     "@types/node": "^20.10.0",
     "typescript": "^5.3.3"
   },

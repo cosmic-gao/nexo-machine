@@ -85,7 +85,7 @@ export class LifecycleManager<T = unknown> {
     let lastContext: LifecycleContext<T> | null = null
 
     for (let i = startIndex; i <= endIndex; i++) {
-      const phase = LIFECYCLE_PHASES[i]
+      const phase = LIFECYCLE_PHASES[i]!
 
       if (skipPhases.includes(phase)) {
         continue

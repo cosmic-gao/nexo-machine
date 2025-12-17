@@ -8,87 +8,6 @@ importers:
 
   .: {}
 
-  commands/add:
-    dependencies:
-      '@nexoc/core':
-        specifier: workspace:*
-        version: link:../../scaffolds/core
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
-  commands/build:
-    dependencies:
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
-  commands/clean:
-    dependencies:
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
-  commands/dev:
-    dependencies:
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
-  commands/generate:
-    dependencies:
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
-  commands/info:
-    dependencies:
-      '@nexoc/types':
-        specifier: workspace:*
-        version: link:../../scaffolds/types
-    devDependencies:
-      '@types/node':
-        specifier: ^20.10.0
-        version: 20.19.27
-      typescript:
-        specifier: ^5.3.3
-        version: 5.9.3
-
   commands/init:
     dependencies:
       '@nexoc/types':
@@ -102,12 +21,17 @@ importers:
         specifier: ^5.3.3
         version: 5.9.3
 
+  configs/tsconfig: {}
+
   scaffolds/adapters:
     dependencies:
       '@nexoc/types':
         specifier: workspace:*
         version: link:../types
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -124,6 +48,9 @@ importers:
         specifier: ^0.1.6
         version: 0.1.6
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -149,6 +76,9 @@ importers:
         specifier: ^6.1.4
         version: 6.1.4
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -165,6 +95,9 @@ importers:
         specifier: ^5.5.3
         version: 5.5.3
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -178,6 +111,9 @@ importers:
         specifier: workspace:*
         version: link:../types
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -215,6 +151,9 @@ importers:
         specifier: ^4.7.0
         version: 4.21.0
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -228,6 +167,9 @@ importers:
         specifier: workspace:*
         version: link:../types
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
@@ -241,6 +183,9 @@ importers:
         specifier: ^5.5.3
         version: 5.5.3
     devDependencies:
+      '@nexoc/tsconfig':
+        specifier: workspace:*
+        version: link:../../configs/tsconfig
       '@types/node':
         specifier: ^20.10.0
         version: 20.19.27
